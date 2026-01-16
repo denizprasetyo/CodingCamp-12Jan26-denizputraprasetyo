@@ -3,36 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Deniz</title>
+    <title>Website Portfolio</title>
 
     <!-- CSS External -->
      <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <!-- Scroll to Top Button -->
+    <button
+        onclick="window.scrollTo({top:0, behavior:'smooth'})"
+        style="position:fixed;bottom:20px;right:20px;padding:10px;border-radius: 50%;">
+        <img src="assets/back-to-top.png" alt="Back to Top" width="40" height="40">
+    </button>
     
 
     <!-- Header -->
     <header class="main-header">
         <!-- Logo -->
-        <div class="logo"></div>
+        <div>
+            <img class="nav-logo" src="assets/logo.png" alt="logo">
+        </div>
+
+        <!-- Title -->
+         <div class="nav-title">
+            <h1>Deniz Putra Prasetyo</h1>
+         </div>
 
         <nav>
-                <a href="#">Home</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Our Profile</a>
-                <a href="#">Message Us</a>
-            </nav>
+            <a class="navlink" href="#home">Home</a>
+            <a class="navlink" href="#experience">Experience</a>
+            <a class="navlink" href="#my-project">Mini Project</a>
+            <a class="navlink" href="#message-us">Message Us</a>
+        </nav>
     </header>
 
     <hr>
          
     <!-- Main Content -->
-     <main>
+    <main>
         <!-- Home Page -->
-     </main>
+        <section id="home">
+            <h1>Welcome to Deniz's Portfolio</h1>
+            <p>Halo, perkenalkan nama saya <b>Deniz Putra Prasetyo</b>. 
+                <br>Saya adalah pelajar dari Sekolah SMK Bunda Kandung Jurusan RPL (Rekayasa Perangkat Lunak), saat ini saya menduduki kelas 11 Semester Genap.
+                <br>Sebagai Junior Programmer, saya memiliki pengetahuan dasar tentang <b>HTML, CSS dan JavaScript</b> dari materi pembelajaran sekolah. Tidak hanya itu saja, di sekolah saya juga <b>mempelajari dasar-dasar pemrograman, mempelajari hardware dan software komputer, mempelajari basis data</b>, dan masih banyak lagi.
+                <br>Saya sangat tertarik dengan dunia pemrograman, oleh karena itu saya ingin mengembangkan kemampuan saya lebih jauh lagi diprogram Coding Camp Software Engineering dari RevoU.
+            </p>
+        </section>
 
+    
+
+    <hr>
+
+    <!-- Experience -->
+     <Section id="experience">
+        <h1>Experience</h1>
+        
+        <div class="container">
+            <div class="pengalaman1">
+                <h3>2024 - 2025</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt perspiciatis recusandae voluptatem quibusdam veniam? Officiis facilis voluptate necessitatibus velit repellendus molltia pariatur, qui explicabo corrupti ipsum veritatis, aperiam maiores omnis?</p>
+            </div>
+            <div class="pengalaman2">
+                <h3>2025 - 2026</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt perspiciatis recusandae voluptatem quibusdam veniam? Officiis facilis voluptate necessitatibus velit repellendus molltia pariatur, qui explicabo corrupti ipsum veritatis, aperiam maiores omnis?</p>
+            </div>
+        </div>
+
+     </Section>
+
+     <hr>
+
+     <!-- Portfolio Page -->
+      <section id="my-project">
+            <h1>Mini Project</h1>
+            <p>Selama di sekolah, selain belajar juga saya pernah membuat beberapa projek kecil seperti dibawah ini :</p>
+            <ul>
+                <li><b>Kalkulator sederhana</b> - Aplikasi desktop sederhana untuk membantu menghitung seperti aplikasi kalkulator pada umumnya. Pada projek ini saya menggunakan Java dengan IDE Netbeans.</li>
+                <br>
+                <li><b>Website Absensi</b> - Website dinamis sederhana untuk menampilkan data kehadiran siswa/i dengan menampilkan nama, kelas dan jurusan siswa/i, beserta tangggal dan waktu siswa/i melakukan absensi. Pada projek ini saya menggunakan HTML, CSS, dan JavaScript dengan bantuan AI.</li>
+            </ul>
+            <p>Untuk projek <b>Website Absensi</b> bisa coba diakses melewati link <a href="https://websiteabsen1.vercel.app/" target="_blank">disini</a>.</p>
+            <hr>
+            <h4>Screenshot Website Absensi</h4>
+                <div class="screenshot">
+                    <img src="assets/screenshot1.png" alt="ss1" width="300px" height="200px">
+                    <img src="assets/screenshot2.png" alt="ss2" width="300px" height="200px">
+                    <img src="assets/screenshot3.png" alt="ss3" width="300px" height="200px">
+                    <img src="assets/screenshot4.png" alt="ss4" width="300px" height="200px">
+                    
+            </div>
+      </section>
+    </main>
+
+    <hr>
      <!-- Footer Content -->
-      <footer></footer>
+      <footer>
+        <section id="message-us">
+            <h1>Message Us</h1>
+            <div class="form-input">
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button class="send" type="submit">Send</button>
+                </form>
+            </div>
+            <div class="form-output">
+
+            </div>
+        </section>
+      </footer>
 
       <!-- JS External -->
        <script src="js/script.js"></script>

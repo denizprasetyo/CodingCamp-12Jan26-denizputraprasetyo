@@ -1,14 +1,104 @@
-.logo {
-    height: 75px;
-    width: 75px;
+.nav-logo { /* Logo */
+    height: 85px;
+    width: 85px;
     background-color: lightgray;
     border-radius: 50%;
-    background-image: "../assets/logo.jpg";
     background-size: cover;
 }
 
-.main-header {
+.nav-title { /* Title */
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.main-header { /* Header */
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.navlink { /* Navigation Button */
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav a { /* Navigation Box Design */
+  display: inline-block;
+  padding: 10px 16px;
+  background: #bbbdbe;
+  margin: 3px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+nav a:hover { /* Navigation Box Hover */
+  background: #8f8f8f;
+}
+
+input{ /* Form Input */
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 450px;
+    height: 20px;
+}
+
+textarea { /* Form Textarea */
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 452px;
+    height: 100px;
+}
+
+.send { /* Send Button */
+    width: 100px;
+    height: 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.send:hover { /* Send Button Hover */
+    background-color: #38853d;
+}
+
+p { /* Paragraph Font */
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+ul li { /* List Font */
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.pengalaman1,
+.pengalaman2 { /* Experience Box */
+  border: 1px solid #555;
+  padding: 10px;
+  width: 80%;       /* lebar 80% dari parent */
+  max-width: 500px; /* maksimal 500px */
+  background-color: #bdbdbd;
+  border-radius: 15px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.screenshot {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
