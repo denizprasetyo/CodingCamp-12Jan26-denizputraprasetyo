@@ -26,13 +26,11 @@
         </div>
 
         <!-- Title -->
-         <div class="nav-title">
-            <h1>Deniz Putra Prasetyo</h1>
-         </div>
+            <h1 id="nav-title"></h1>
 
         <nav>
             <a class="navlink" href="#home">Home</a>
-            <a class="navlink" href="#experience">Experience</a>
+            <a class="navlink" href="#skills">Skills</a>
             <a class="navlink" href="#my-project">Mini Project</a>
             <a class="navlink" href="#message-us">Message Us</a>
         </nav>
@@ -57,17 +55,17 @@
     <hr>
 
     <!-- Experience -->
-     <Section id="experience">
-        <h1>Experience</h1>
+     <Section id="skills">
+        <h1>Skills</h1>
         
         <div class="container">
-            <div class="pengalaman1">
-                <h3>2024 - 2025</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt perspiciatis recusandae voluptatem quibusdam veniam? Officiis facilis voluptate necessitatibus velit repellendus molltia pariatur, qui explicabo corrupti ipsum veritatis, aperiam maiores omnis?</p>
+            <div class="skills1">
+                <h3>Hardware & Software</h3>
+                <p>Saya mampu menganalisis, memperbaiki, dan menyelesaikan masalah pada Komputer / Laptop Client. Mulai dari perangkat keras (Hardware) hingga perangkat lunak (Software).</p>
             </div>
-            <div class="pengalaman2">
-                <h3>2025 - 2026</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt perspiciatis recusandae voluptatem quibusdam veniam? Officiis facilis voluptate necessitatibus velit repellendus molltia pariatur, qui explicabo corrupti ipsum veritatis, aperiam maiores omnis?</p>
+            <div class="skills2">
+                <h3>Basic Programming Language</h3>
+                <p>Saya memahami dasar bahasa pemrograman seperti <b>HTML, CSS, Javascript dan Python</b>. Dan saya sudah membuat beberapa projek dari bahasa pemrograman tersebut.</p>
             </div>
         </div>
 
@@ -80,9 +78,9 @@
             <h1>Mini Project</h1>
             <p>Selama di sekolah, selain belajar juga saya pernah membuat beberapa projek kecil seperti dibawah ini :</p>
             <ul>
-                <li><b>Kalkulator sederhana</b> - Aplikasi desktop sederhana untuk membantu menghitung seperti aplikasi kalkulator pada umumnya. Pada projek ini saya menggunakan Java dengan IDE Netbeans.</li>
+                <li><b>Kalkulator sederhana</b> - Aplikasi desktop sederhana untuk membantu menghitung seperti aplikasi kalkulator pada umumnya. Pada projek ini saya menggunakan <b>Java</b> dengan IDE <b>Netbeans</b>.</li>
                 <br>
-                <li><b>Website Absensi</b> - Website dinamis sederhana untuk menampilkan data kehadiran siswa/i dengan menampilkan nama, kelas dan jurusan siswa/i, beserta tangggal dan waktu siswa/i melakukan absensi. Pada projek ini saya menggunakan HTML, CSS, dan JavaScript dengan bantuan AI.</li>
+                <li><b>Website Absensi</b> - Website dinamis sederhana untuk menampilkan data kehadiran siswa/i dengan menampilkan nama, kelas dan jurusan siswa/i, beserta tangggal dan waktu siswa/i melakukan absensi. Pada projek ini saya menggunakan <b>HTML, CSS, dan JavaScript</b> dengan bantuan <b>AI</b>.</li>
             </ul>
             <p>Untuk projek <b>Website Absensi</b> bisa coba diakses melewati link <a href="https://websiteabsen1.vercel.app/" target="_blank">disini</a>.</p>
             <hr>
@@ -102,22 +100,29 @@
       <footer>
         <section id="message-us">
             <h1>Message Us</h1>
-            <div class="form-input">
-                <form>
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" required></textarea>
-                    <button class="send" type="submit">Send</button>
-                </form>
-            </div>
-            <div class="form-output">
-
+            
+            <!-- CONTAINER BARU: Supaya form dan hasil bersebelahan -->
+            <div class="form-result-wrapper">
+                
+                <!-- FORM INPUT (KIRI) -->
+                <div class="form-input">
+                    <form id="formMessage">
+                        <input class="nama" type="text" placeholder="Masukan Nama Anda..." required>
+                        <input class="email" type="email" placeholder="Masukan Email Anda..." required>
+                        <textarea class="pesan" placeholder="Masukan Pesan..." required></textarea>
+                        <button class="send" type="submit">Send</button>
+                    </form>
+                </div>
+                
+                <!-- HASIL OUTPUT (KANAN) -->
+                <div id="hasil" class="hasil-box"></div>
+                
             </div>
         </section>
       </footer>
 
       <!-- JS External -->
-       <script src="js/script.js"></script>
+       <script src="js/script.js" defer></script>
 
 </body>
 </html>

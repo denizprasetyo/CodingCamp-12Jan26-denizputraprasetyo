@@ -36,13 +36,33 @@ nav a:hover { /* Navigation Box Hover */
   background: #8f8f8f;
 }
 
-input{ /* Form Input */
+/* ===============================================
+   WRAPPER: Supaya form dan hasil bersebelahan
+   =============================================== */
+.form-result-wrapper {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* FORM INPUT (SEBELAH KIRI) */
+.form-input {
+    flex: 1;
+    max-width: 500px;
+}
+
+.nama,
+.email { /* Form Input */
     align-items: left;
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
-    width: 450px;
-    height: 20px;
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 textarea { /* Form Textarea */
@@ -50,13 +70,16 @@ textarea { /* Form Textarea */
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
-    width: 452px;
+    width: 100%;
     height: 100px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .send { /* Send Button */
     width: 100px;
-    height: 30px;
+    height: 35px;
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -66,6 +89,27 @@ textarea { /* Form Textarea */
 
 .send:hover { /* Send Button Hover */
     background-color: #38853d;
+}
+
+/* HASIL OUTPUT (SEBELAH KANAN) */
+.hasil-box {
+    flex: 1;
+    max-width: 500px;
+    border: 2px solid #acacac;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #eeeeee;
+    min-height: 250px;
+}
+
+.hasil-box h3 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.hasil-box p {
+    margin: 8px 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 p { /* Paragraph Font */
@@ -78,8 +122,8 @@ ul li { /* List Font */
     font-size: 16px;
 }
 
-.pengalaman1,
-.pengalaman2 { /* Experience Box */
+.skills1,
+.skills2 { /* Experience Box */
   border: 1px solid #555;
   padding: 10px;
   width: 80%;       /* lebar 80% dari parent */
@@ -101,4 +145,11 @@ ul li { /* List Font */
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+/* RESPONSIVE: Kalau layar kecil, form dan hasil jadi ke bawah */
+@media (max-width: 768px) {
+    .form-result-wrapper {
+        flex-direction: column;
+    }
 }
